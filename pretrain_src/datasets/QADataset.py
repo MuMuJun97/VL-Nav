@@ -224,10 +224,10 @@ class BaseDataset(object):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='arg parser')
 
-    parser.add_argument('--cfg_file', type=str, default="/home/zlin/vln/turning/VLN-DUET/qallm/cfgs/dataset.yaml", help='dataset configs')
-    parser.add_argument('--img_feats', type=str, default="vit_imagenet", help='dataset configs')
-    parser.add_argument('--obj_feats', type=str, default="butd_SOON", help='dataset configs')
-    parser.add_argument('--split', type=str, default="train", help='dataset configs')
+    parser.add_argument('--cfg_file', type=str, default="pretrain_src/cfgs/dataset.yaml", help='dataset configs')
+    parser.add_argument('--img_feats', type=str, default="vit_imagenet", help='image features')
+    parser.add_argument('--obj_feats', type=str, default="butd_SOON", help='object features')
+    parser.add_argument('--split', type=str, default="train", help='train, val_seen, val_unseen, test')
 
     args = parser.parse_args()
 

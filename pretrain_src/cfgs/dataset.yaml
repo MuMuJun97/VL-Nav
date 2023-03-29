@@ -1,4 +1,5 @@
 Dataset:
+  # TODO Modified here:
   DATA_DIR: "/home/zlin/vln/turning/VLN-DUET"
 
   SOON_DIR: "datasets/SOON/annotations/iccv21_new_released" # train.json
